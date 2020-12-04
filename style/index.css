@@ -200,13 +200,14 @@ main {
 
 footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 20rem;
     width: 100%;
 }
 
-footer a {
+.contact-link {
     display: flex;
     font-size: 3.2rem;
     border: 1px solid black;
@@ -217,10 +218,14 @@ footer a {
     transition: .3s;
 }
 
-footer a:hover {
+.contact-link:hover {
     box-shadow: none;
     background-color: white;
     color: black;
+}
+
+#social-links a {
+    margin-right: 2rem;
 }
 
 /* ABOUT PAGE STYLES START */
