@@ -3,9 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/81ff8d06fb.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/index.css">
+    <title>Paul St.Germain | Developer</title>
 </head>
 <body>
-    <h1> PROJECTS </h1>
+    <nav>
+        <h1>Paul St.Germain</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+    </nav>
+
+    
+
+    <main>
+        <div class="project-div">
+            <div class="project-img mySite">
+
+            </div>
+            <div class="project-text">
+                <p>The first version of my personal website, now hosted at <a href="https://paul-stgermain.com" target="_blank">paul-stgermain.com</a>.</p>
+                <p>Built with Bootstrap.</p>
+            </div>
+        </div>
+
+        <div class="project-div">
+            <div class="project-text">
+                <p>My first attempt at building a personal start-page, an idea I became obsessed with after finding<br> <a href="https://startpages.github.io/" target="_blank">this page.</a></p>
+                <p>Built partially with Bootstrap, featuring a functioning JavaScript clock and weather app.<br>
+                Currently hosted at <a href="https://paulstgermain.github.io/flow/" target="_blank">paulstgermain.github.io/flow</a></p>
+            </div>
+            <div class="project-img flow">
+
+            </div>
+        </div>
+
+        <div class="project-div">
+            <div class="project-img weather">
+
+            </div>
+            <div class="project-text">
+                <p>A full page version of my working weather script, API data pulled from <a href="https://openweathermap.org/" target="_blank">Open Weather Map</a></p>
+                <p>Hosted at <a href="https://paulstgermain.github.io/weather/" target="_blank">paulstgermain.github.io/weather</a></p>
+            </div>
+        </div>
+
+        <div class="project-div">
+            <div class="project-text">
+                <p>My first attempt at creating a full featured blog-page. Built in the process of working ahead of a web development course on Udemy, it is run by a Node.js/Express.js server and backed by a MongoDB database for data persistence. It's built with HTML, CSS, JavaScript & EJS.</p>
+                <p>Currently hosted at <a href="https://obscure-brook-72422.herokuapp.com/" target="_blank">obscure-brook-72422.herokuapp.com</a></p>
+            </div>
+            <div class="project-img blog">
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="projects-footer">
+        <a class="contact-link" href="contact.html">Contact Me</a><br><br>
+        <div id="social-links">
+            <a href="#"><i class="fab fa-github"></i> Github</a>
+            <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="#"><i class="far fa-envelope"></i> Email</a>
+          </div>
+    </footer>
 </body>
 </html>

@@ -1,1 +1,511 @@
 /* Add CSS styling here */
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+    box-sizing: border-box;
+    max-width: 100%;
+    /* border: 1px solid black; */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 10rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #125080;
+}
+
+nav div {
+    display: flex;
+    height: 60%;
+    width: 50%;
+    padding-right: .5rem;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav h1 {
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    font-size: 4.8rem;
+    margin-left: 2%;
+}
+
+nav div a {
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 1.6rem 4rem 1.6rem 4rem;
+    transition: .3s;
+}
+
+nav div a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* INTRO SECTION STYLES START */
+
+main {
+    background-color: rgba(33, 33, 33, 0.9)
+}
+
+#intro-section {
+    display: flex;
+    height: 100vh;
+    width: 80vw;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    background: url("../images/forest.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#intro-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20rem;
+    width: 40%;
+    text-align: center;
+    background-color: rgba(33, 33, 33, 0.5);
+    color: #FFFFFF;
+}
+
+#intro-block h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 4.8rem;
+}
+
+#intro-block p {
+    font-size: 3.2rem;
+}
+
+#intro-block a {
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: .3s;
+}
+
+#intro-block a:hover {
+    color: blue;
+}
+
+/* PROJECTS SECTION STYLES START */
+
+#projects-section {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100vh;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    padding-bottom: 2rem;
+    margin-bottom: 5rem;
+    border: 1px solid black;
+    background-color: #FFFFFF
+}
+
+.project-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 45%;
+    width: 20%;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+}
+
+.project-card img {
+    width: 100%;
+    height: calc(100% - 6.8rem);
+    object-fit: cover;
+}
+
+.project-card a {
+    font-size: 2rem;
+    background-color: rgba(33, 33, 33, 0.3);
+    color: white;
+    font-weight: bold;
+    opacity: 0;
+    transition: .3s;
+}
+
+.project-card:hover a {
+    opacity: 1;
+}
+
+.project-card a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.project-card:nth-child(1) {
+    background: url("../images/home.png") center/cover no-repeat;
+}
+
+.project-card:nth-child(2) {
+    background: url("https://picsum.photos/200") center/cover no-repeat;
+}
+
+.project-card:nth-child(3) {
+    background: url("../images/flow.png") center/cover no-repeat;
+}
+
+.project-card:nth-child(4) {
+    background: url("https://picsum.photos/200") center/cover no-repeat;
+}
+
+.project-card:nth-child(5) {
+    background: url("../images/weather.png") center/cover no-repeat;
+}
+
+.project-card:nth-child(6) {
+    background: url("https://picsum.photos/200") center/cover no-repeat;
+}
+
+.project-card:nth-child(7) {
+    background: url("../images/blogv1.png") center/cover no-repeat;
+}
+
+.project-card:nth-child(8) {
+    background: url("https://picsum.photos/200") center/cover no-repeat;
+}
+
+/* FOOTER STYLES START */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    width: 100%;
+}
+
+.contact-link {
+    display: flex;
+    font-size: 3.2rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 1.6rem 4rem 1.6rem 4rem;
+    background-color: #125080;
+    box-shadow: 2px 2px 15px 10px #21212180;
+    transition: .3s;
+}
+
+.contact-link:hover {
+    box-shadow: none;
+    background-color: white;
+    color: black;
+}
+
+#social-links a {
+    margin-right: 2rem;
+}
+
+/* MAIN PAGE 1366PX MEDIA QUERY */
+
+@media (max-width: 1366px) {
+
+    #intro-section {
+        height: 110vh;
+    }
+
+    #intro-block {
+        width: 45%;
+    }
+
+    #projects-section {
+        padding: 1% 0 4% 0;
+    }
+}
+
+/* MAIN PAGE 800PX MEDIA QUERY */
+
+@media (max-width: 800px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav div {
+        /* flex-direction: column; */
+        justify-content: center;
+        width: 100%;
+    }
+
+    #intro-block {
+        width: 60%;
+    }
+
+    #projects-section {
+        height: auto;
+        padding-top: 3%;
+    }
+
+    .project-card {
+        width: 40%;
+        height: 30rem;
+        justify-content: flex-end;
+    }
+
+    .project-card a {
+        width: 100%;
+        padding: 2% 0;
+        opacity: 1;
+        background-color: rgba(33, 33, 33, 0.9);
+    }
+}
+
+/* MAIN PAGE 500PX MEDIA QUERY START */
+
+@media (max-width: 500px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav h1 {
+        margin: 0;
+        font-size: 4rem;
+    }
+
+    nav div {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 3%;
+    }
+
+    nav div a {
+        width: 30%;
+        padding: 1.6rem 0;
+        font-size: 2rem;
+    }
+
+    #intro-section {
+        height: 50vh;
+    }
+
+    #intro-block {
+        height: auto;
+        padding: 4% 0;
+    }
+
+    #intro-block h1 {
+        font-size: 2.4rem;
+    }
+
+    #intro-block p {
+        font-size: 2rem;
+    }
+
+    #intro-block a {
+        font-size: 1.8rem;
+    }
+
+    .project-card {
+        height: 20rem;
+        width: 45%;
+        margin: 20px 0;
+    }
+
+    .project-card a {
+        font-size: 1.6rem;
+        text-decoration: underline;
+    }
+
+    footer {
+        height: 15rem;
+    }
+}
+
+/* MAIN PAGE 360PX MEDIA QUERY */
+
+@media (max-width: 360px) {
+    #social-links a{
+        font-size: 2rem;
+    }
+}
+
+/* ABOUT PAGE STYLES START */
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 150vh;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 70%;
+    text-align: center;
+}
+
+.about-text h1 {
+    font-size: 4.2rem;
+    margin-bottom: 1.6rem;
+}
+
+.about-text p {
+    font-size: 2.4rem;
+}
+
+/* CONTACT PAGE STYLES START */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+#contact-form {
+    height: 100%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #contact-form h1 {
+      font-size: 4.2rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+  }
+  
+  .form-input, .form-textarea{
+    width: 50%;
+    height: 3rem;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 5px;
+    box-shadow: 0 0 1.5rem 0.4rem rgba(0, 0, 0, 0.08);
+    font-size: 1.6rem;
+  }
+  
+  .form-textarea {
+    height: 15rem;
+  }
+  
+  #form-button {
+    display: block;
+    align-self: center;
+    width: 25%;
+    padding: 5px;
+    border: solid 1px black;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    box-shadow: 0 0 1.5rem 0.4rem rgba(0, 0, 0, 0.10);
+    font-size: 2.4rem;
+    transition: .3s;
+  }
+  
+  #form-button:hover {
+    box-shadow: none;
+    background-color: #125080;
+    color: white;
+  }
+
+  /* PROJECTS PAGE STYLES START */
+
+  .project-div {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 75vh;
+  }
+
+  .project-div:nth-child(odd) {
+      background-color: white;
+  }
+
+  .project-img {
+    width: 50%;
+    overflow: hidden;
+    margin: 20px;
+  }
+
+  .project-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 50%;
+  }
+
+  .project-text p,a {
+      font-size: 2.4rem;
+  }
+
+  .project-text:nth-child(odd) {
+      color: white;
+  }
+
+  .project-text a {
+      transition: .3s;
+  }
+
+  .project-text a {
+    color: navy;
+  }
+
+  .project-text a:hover {
+    color: blue;
+    text-decoration: underline;
+  }
+
+  .mySite {
+    background: url("../images/home.png") center/cover no-repeat;
+  }
+
+  .flow {
+    background: url("../images/flow.png") center/cover no-repeat;
+  }
+
+  .weather {
+    background: url("../images/weather.png") center/cover no-repeat;
+  }
+
+  .blog {
+    background: url("../images/blogv1.png") center/cover no-repeat;
+  }
+
+  .projects-footer {
+      background-color: rgba(33, 33, 33, 0.9);
+  }
