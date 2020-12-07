@@ -222,6 +222,23 @@ footer {
     margin-right: 2rem;
 }
 
+/* MAIN PAGE 1366PX MEDIA QUERY */
+
+@media (max-width: 1366px) {
+
+    #intro-section {
+        height: 110vh;
+    }
+
+    #intro-block {
+        width: 45%;
+    }
+
+    #projects-section {
+        padding: 1% 0 4% 0;
+    }
+}
+
 /* MAIN PAGE 800PX MEDIA QUERY */
 
 @media (max-width: 800px) {
@@ -317,6 +334,14 @@ footer {
 
     footer {
         height: 15rem;
+    }
+}
+
+/* MAIN PAGE 360PX MEDIA QUERY */
+
+@media (max-width: 360px) {
+    #social-links a{
+        font-size: 2rem;
     }
 }
 
