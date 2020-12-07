@@ -27,7 +27,7 @@ nav {
     background-color: #125080;
 }
 
-nav ul {
+nav div {
     display: flex;
     height: 60%;
     width: 50%;
@@ -41,22 +41,17 @@ nav h1 {
     font-family: 'Merriweather', serif;
     font-style: italic;
     font-size: 4.8rem;
-    margin-left: .5rem;
+    margin-left: 2%;
 }
 
-nav ul li {
-    display: flex;
-    font-size: 3.2rem;
-}
-
-nav ul li a {
+nav div a {
     text-decoration: none;
     border: 1px solid black;
     padding: 1.6rem 4rem 1.6rem 4rem;
     transition: .3s;
 }
 
-nav ul li a:hover{
+nav div a:hover{
     background-color: white;
     color: black;
 }
@@ -77,9 +72,8 @@ main {
     border-left: 2px solid black;
     border-right: 2px solid black;
     background: url("../images/forest.jpg") no-repeat center;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 600px;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #intro-block {
@@ -228,6 +222,104 @@ footer {
     margin-right: 2rem;
 }
 
+/* MAIN PAGE 800PX MEDIA QUERY */
+
+@media (max-width: 800px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav div {
+        /* flex-direction: column; */
+        justify-content: center;
+        width: 100%;
+    }
+
+    #intro-block {
+        width: 60%;
+    }
+
+    #projects-section {
+        height: auto;
+        padding-top: 3%;
+    }
+
+    .project-card {
+        width: 40%;
+        height: 30rem;
+        justify-content: flex-end;
+    }
+
+    .project-card a {
+        width: 100%;
+        padding: 2% 0;
+        opacity: 1;
+        background-color: rgba(33, 33, 33, 0.9);
+    }
+}
+
+/* MAIN PAGE 500PX MEDIA QUERY START */
+
+@media (max-width: 500px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav h1 {
+        margin: 0;
+        font-size: 4rem;
+    }
+
+    nav div {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 3%;
+    }
+
+    nav div a {
+        width: 30%;
+        padding: 1.6rem 0;
+        font-size: 2rem;
+    }
+
+    #intro-section {
+        height: 50vh;
+    }
+
+    #intro-block {
+        height: auto;
+        padding: 4% 0;
+    }
+
+    #intro-block h1 {
+        font-size: 2.4rem;
+    }
+
+    #intro-block p {
+        font-size: 2rem;
+    }
+
+    #intro-block a {
+        font-size: 1.8rem;
+    }
+
+    .project-card {
+        height: 20rem;
+        width: 45%;
+        margin: 20px 0;
+    }
+
+    .project-card a {
+        font-size: 1.6rem;
+        text-decoration: underline;
+    }
+
+    footer {
+        height: 15rem;
+    }
+}
+
 /* ABOUT PAGE STYLES START */
 
 .about {
@@ -324,7 +416,7 @@ footer {
     color: white;
   }
 
-  /* PROJECTS SECTION STYLES START */
+  /* PROJECTS PAGE STYLES START */
 
   .project-div {
       display: flex;
